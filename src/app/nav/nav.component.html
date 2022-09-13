@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <!--STRING INTERPOLATION-->
+      <!--PROPERTY BINDING IN img tag-->
+      <a class="navbar-brand " href="#">
+        <img [src]="logo" alt="Gadgets">{{title}}</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <!--href - render the entire page-->
+            <!--SPA - Partial Rendering - routerLink-->
+            <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="cards">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="contact">Customer Care</a>
+          </li>
+
+
+          
+        </ul>
+        <form class="d-flex">
+          <input type="text" #productname placeholder="Enter Product name" style="border-radius:10px; height: 50px;">&nbsp;
+          <!--EVENT BINDING-->
+          <button class="btn btn-success" type="submit" (click)="search_product(productname.value);productname.value=''" style="border-radius:10px;height: 50px;">Search</button>
+          <!--Access the Search Component-->
+          <br>
+          <!--Laptop will get assigned to the property product in search component-->
+          <!--@Input(product) in search component-->
+          <!--PROPERTY BINDING-->
+          <!--@Input(product) in search component is going to receive the value from productentered property from nav component-->
+         
+        </form>
+      </div>
+    </div>
+  </nav>
+  <br>&nbsp;&nbsp;&nbsp;
+  <app-search [product]="productentered"></app-search>
+  <br>
+  <br>
