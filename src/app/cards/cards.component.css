@@ -18,12 +18,12 @@
 
 }
 .container .card{
-    width:270px;
+    width:370px;
     overflow:hidden;
     border: 3px solid rgb(12, 12, 12);
     border-radius: 15px;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0);
-    min-height:300px ;
+    min-height:500px ;
     margin-top: 30px;
     margin-bottom: 30px;
 
@@ -38,14 +38,15 @@
 }
 img{
     width:100%;
+    min-height: 0px;
 }
 img:hover{
     transform: scale(1.1);
 }
 .product-info{
-    font-size: 18px;
-    padding: 0 25px;
-    margin-bottom: 10px;
+    font-size: 15px;
+    padding: 0 20px;
+    margin-bottom: 20px;
 }
 h4{
     font-size: 20px;
@@ -54,7 +55,8 @@ h4{
 }
 .btn{
     width:100%;
-    padding:10px;
+    margin-top: 20px;
+    padding:5px;
     background: rgb(97, 55, 236);
     outline: none;
   
@@ -65,7 +67,8 @@ h4{
 }
 button{
     width:100%;
-    padding:10px;
+    align-items: flex-end;
+    padding:5px;
     background: rgb(97, 55, 236);
     border: 1px solid  rgb(15, 14, 14);
     outline: none;

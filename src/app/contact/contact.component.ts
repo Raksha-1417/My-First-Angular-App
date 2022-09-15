@@ -11,5 +11,8 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  onClick(){
+    alert("You Have Submitted Form")
+  }
 
 }
