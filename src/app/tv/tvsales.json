@@ -1,0 +1,56 @@
+[
+  
+    {
+        "pid": "1",
+        "image":"/assets/images/tv1.webp",
+        "pname": "Mi 4C 108 cm (43 inch)",
+         "price":19999,
+        "pdescription":"Resolution: Full HD 1920 x 1080 PixelsSound Output: 20 W"
+        
+          
+    },
+       
+    {
+        "pid": "2",
+        "image":"/assets/images/tv2.webp",
+        "pname": "OnePlus Y1S 108 cm (43 inch) ",
+        "price":31999,
+        "pdescription":") Full HD LED Smart Android TV with Android 11 and Bezel-Less Frame"
+              
+     },
+     {
+        "pid": "3",
+        "image":"/assets/images/tv3.webp",
+        "pname": "Mi 5A 108 cm (43 inch)",
+         "price":35999,
+        "pdescription":"Full HD LED Smart Android TV with Dolby Audio (2022 Model)"
+        
+      },
+     
+      {
+        "pid": "4",
+        "image":"/assets/images/tv6.webp",
+        "pname": "SONY Bravia 108 cm (43 inch)",
+         "price":66900,
+        "pdescription":"Ultra HD (4K) LED Smart Android TV,Apps: Netflix|Prime"
+        
+      },
+     
+      {
+        "pid": "5",
+        "image":"/assets/images/tv5.webp",
+        "pname": "Panasonic 108 cm (43 Inches)",
+         "price":54999,
+        "pdescription":"4K Ultra HD Smart Android LED TV, 3 HDMI Ports"
+        
+      },
+      {
+        "pid": "6",
+        "image":"/assets/images/tv6.webp",
+        "pname": "SONY X80AJ 163.9 cm (65 inch) ",
+         "price":124999,
+        "pdescription":"Ultra HD (4K) LED Smart Google TV,Apps: Netflix|Prime"
+        
+      }
+
+]

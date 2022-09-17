@@ -41,7 +41,7 @@
   <br>
   
 <section class="about section-padding" id="about">
-		<div class="container">
+		<div class="about-container" style="margin-left: 80px;">
 			<div class="row">
 				<h1 style="text-align: center;"> <span class="text-dark" >Feel it</span> Reel </h1>
         <h2 style="text-align: center;"><span class="text-info"> M-Store </span>Provides ravishing Mobiles
@@ -72,10 +72,103 @@
 			
 	</section>
   <section>
+  <div class="row">
+<div class="col-sm-2">
+  <div class="list-group" style="width: 200px;">
+    <a href="#" class="list-group-item list-group-item-action"><span class="fa-sharp fa-solid fa-bars">   Categories</span></a>
+  
+  
+  
+    <a href="#" routerLink="/cards" class="list-group-item list-group-item-action list-group-item-info"><i class="fa-solid fa-mobile">   Mobiles</i></a>
+    <i class="fa-solid fa-square-list"></i><a href="#" routerLink="/tv" class="list-group-item list-group-item-action list-group-item-info"><i class="fa-solid fa-tv">   TV</i></a>
+    <a href="#" routerLink="/laptops" class="list-group-item list-group-item-action list-group-item-info"><i class="fa-solid fa-laptop">   Laptops</i></a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-info"><i class="fa-solid fa-clock">   Accesories</i></a>
 
-  </section>
-  <footer class="bg-dark p-2 text-center">
-		<div class="container">
-			<p class="text-white">All Right Reserved By @ radiant.com</p>
-		</div>
-	</footer>
+    
+  </div>
+</div>
+  
+    <div class="col-sm-10">
+    
+<div class="bbb_viewed">
+    <div class="container" id="sales">
+        <div class="row">
+            <div class="col">
+               <div class="bbb_main_container">
+                <div class="bbb_viewed_title_container">
+                    <h3 class="bbb_viewed_title">Best selling products<i class="fa-solid fa-square-list"></i></h3>
+                  
+                </div>
+                <div class="col">
+                  <div class="container"  id="buy">
+                    <div *ngFor="let lap of product.slice(0,3)"  style="border:none;margin-top:30px;">
+                    <div class="card d-flex flex-column h-150" >
+                        
+                        <div class="product-image">
+                            <img [src]="lap.image" [style.height]="'200px'" [style.width] ="'200px'" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h4>{{lap.pname | uppercase}}</h4>
+                            <h4>Price : {{lap.price | currency : 'INR'}}</h4>
+                          
+                        </div>
+                       
+                        
+                        <div class="bn">
+                            <button class="btn btn-primary btn-sm float-center" style="width:150px;height:50px;margin-top:30px;">Buy Now</button>
+                        </div>
+                    
+                
+                   
+                    </div>
+                    </div>
+                  </div>
+                
+                 
+                </div>
+               
+        </div>
+    </div>
+</div>
+      
+     
+    </div>
+    </div>
+  
+</div>
+</div>
+</section>
+
+
+
+  <footer>  
+    <div class="footer0">  
+      <h1>M-StoRe</h1>  
+    </div>  
+   
+    <div class="footer2">  
+      <div class="product">  
+        <div class="heading">Products</div>  
+        <div class="div">Sell your Products</div>  
+        <div class="div">Advertise</div>  
+        <div class="div">Pricing</div>  
+      
+      </div>  
+      <div class="services">  
+        <div class="heading">Services</div>  
+        <div class="div">Return</div>  
+        <div class="div">Cash Back</div>  
+       
+        <div class="div">Others</div>  
+      </div>  
+     
+      <div class="Get Help">  
+        <div class="heading">Get Help</div>  
+        <div class="div">Help Center</div>  
+        <div class="div">Privacy Policy</div>  
+        <div class="div">Terms</div>  
+        <div class="div">Login</div>  
+      </div>  
+    </div>  
+    <div class="footer3">Copyright © <h4>M-StoRe</h4> 2022</div>  
+  </footer>

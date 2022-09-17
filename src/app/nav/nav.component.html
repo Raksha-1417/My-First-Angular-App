@@ -1,3 +1,7 @@
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <!--STRING INTERPOLATION-->
@@ -8,11 +12,11 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <!-- <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <!--href - render the entire page-->
+            href - render the entire page-->
             <!--SPA - Partial Rendering - routerLink-->
-            <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+           <!-- <a class="nav-link active" aria-current="page" routerLink="">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="cards">Products</a>
@@ -22,11 +26,11 @@
           </li>
 
           
-        </ul>
+        </ul> -->
         <form class="d-flex">
-          <input type="text" #productname placeholder="Enter Product name" style="border-radius:10px; height: 50px;">&nbsp;
+          <input type="text" #productname placeholder="Enter Product name" style="border-radius:10px; height: 50px; margin-left: 950px;">&nbsp;
           <!--EVENT BINDING-->
-          <button class="btn btn-success" type="submit" (click)="search_product(productname.value);productname.value=''" 
+          <button class="btn btn-outline-info" type="submit" (click)="search_product(productname.value);productname.value=''" 
           style="border-radius:10px;height: 50px;">Search</button>
           <!--Access the Search Component-->
           <br>
@@ -35,8 +39,44 @@
         
       </div>
     </div>
+    
   </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+     
+      
+     
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <!--href - render the entire page-->
+            <!--SPA - Partial Rendering - routerLink-->
+            <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="cards">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="laptops">Laptops</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="tv">TV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="contact">Customer Care</a>
+          </li>
+
+          
+        </ul>
+  
+        
+      </div>
+    </div>
+    
+  </nav>
+
   <br>&nbsp;&nbsp;&nbsp;
   <app-search [product]="productentered"></app-search>   <!--PROPERTY BINDING-->
   <br>
   <br>
+  

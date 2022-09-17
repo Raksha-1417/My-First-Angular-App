@@ -10,6 +10,11 @@ import { CardsComponent } from './cards/cards.component';
 import { SearchComponent } from './search/search.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+import { LaptopsComponent } from './laptops/laptops.component';
+import { TvComponent } from './tv/tv.component';
+import { TvsalesComponent } from './tv/tvsales/tvsales.component';
+import { AdvertismentComponent } from './advertisment/advertisment.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +24,12 @@ import { AboutComponent } from './about/about.component';
     CardsComponent,
     SearchComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    LaptopsComponent,
+    TvComponent,
+    TvsalesComponent,
+    AdvertismentComponent,
+  
   ],
   imports: [
     BrowserModule,

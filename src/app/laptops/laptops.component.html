@@ -1,0 +1,89 @@
+<h1 [style.text-align]="'center'" [style.font-weight]="'bold'" [style.font-size]="'45px'" [style.color]="'rgb(81, 81, 248)'">Laptops</h1>
+<div class="row">
+  
+  <div class="col col-md-10">
+<div class="container"  id="buy">
+    <div *ngFor="let lap of product"  style="border:none;margin-top:30px;">
+    <div class="card" >
+        
+        <div class="product-image">
+            <img [src]="lap.image" [style.height]="'200px'" [style.width] ="'200px'" alt="">
+        </div>
+        <div class="product-info">
+            <h4>{{lap.pname | uppercase}}</h4>
+            <h4>Price : {{lap.price | currency : 'INR'}}</h4>
+            <span (click)="showproductToggle()" [ngClass]="toggleDetail()"></span>
+        </div>
+        <div class="product-info" [hidden]="ProductDetail">
+            <h6 [style.text-align]="'justify'">{{lap.pdescription}}</h6>
+           
+        </div>
+        <div class="p-2 mb-2 bg-success text-white text-center">In Stock</div>
+        <div class="btn">
+            <button type="button">Buy Now</button>
+        </div>
+    
+
+   
+    </div>
+    </div>
+  </div>
+</div>
+<div class="col col-md-2">
+ <img src="/assets/images/adver 3.gif" height="800" width="500">
+ <img routersrc="/assets/images/adver4.gif"  height="800" width="500">
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="left">
+<div class="list-group" style="width: 200px;">
+    <a href="#" class="list-group-item list-group-item-action">Categories</a>
+  
+  
+  
+    <a routerLink="/cards" class="list-group-item list-group-item-action list-group-item-info">Mobiles</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-info">Laptops</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-info">Headphones</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-info">TV</a>
+
+    
+  </div>
+</div>
+  <div class="right">
+<div *ngFor="let lap of product" style="border:none;margin-top:30px;">
+<div class="card mb-5  mx-auto" style="max-width: 840px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img [src]="lap.image" [style.margin-left]="'30px'" [style.height]="'180px'" [style.width] ="'180px'" alt="">
+       
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{lap.pname}}</h5>
+          <h6>{{lap.price | currency : 'INR'}}</h6>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">New Product</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+ -->
