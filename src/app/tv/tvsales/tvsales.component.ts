@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import * as tele from "../tvsales.json";
+import { Component, Input, OnInit } from '@angular/core';
+
 @Component({
   selector: 'app-tvsales',
   templateUrl: './tvsales.component.html',
@@ -8,10 +8,10 @@ import * as tele from "../tvsales.json";
 export class TvsalesComponent implements OnInit {
 
   constructor() { }
-
+   @Input() tel:any
   ngOnInit(): void {
   }
-  television:any=(tele as any).default;
+ 
   productDetail=false;
   //Event to perform the toggle effect
   showproductDetailsToggle()

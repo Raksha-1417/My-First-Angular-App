@@ -1,31 +1,41 @@
 <marquee>Grab Your Favourite TV </marquee>
 <div style="margin-top: 30px;">
     <div class="row" style="border:5px solid rgb(120, 158, 232) ;border-radius:40px ;">
+        
         <!--1st column-->
-        <div class="col col-md-2" >
+        <div class="col col-md-2">
             <div class="list-group" style="width: 200px;">
-                <a href="#" class="list-group-item list-group-item-action"><span class="fa-sharp fa-solid fa-bars">   Categories</span></a>
-              
-              
-              
-                <a href="#" routerLink="/cards" class="list-group-item list-group-item-action list-group-item-info"><i class="fa-solid fa-mobile">   Mobiles</i></a>
-                <i class="fa-solid fa-square-list"></i><a href="#" routerLink="/tv" class="list-group-item list-group-item-action list-group-item-info"><i class="fa-solid fa-tv">   TV</i></a>
-                <a href="#" routerLink="/laptops" class="list-group-item list-group-item-action list-group-item-info"><i class="fa-solid fa-laptop">   Laptops</i></a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-info"><i class="fa-solid fa-clock">   Accesories</i></a>
-            
-                
-              </div>
-           
+                <a href="#" class="list-group-item list-group-item-action"><span class="fa-sharp fa-solid fa-bars">
+                        Categories</span></a>
+
+                <a href="#" routerLink="/cards" class="list-group-item list-group-item-action list-group-item-info"><i
+                        class="fa-solid fa-mobile"> Mobiles</i></a>
+                <i class="fa-solid fa-square-list"></i><a href="#" routerLink="/tv"
+                    class="list-group-item list-group-item-action list-group-item-info"><i class="fa-solid fa-tv">
+                        TV</i></a>
+                <a href="#" routerLink="/laptops" class="list-group-item list-group-item-action list-group-item-info"><i
+                        class="fa-solid fa-laptop"> Laptops</i></a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-info"><i
+                        class="fa-solid fa-clock"> Accesories</i></a>
+
+
+            </div>
+
         </div>
 
         <!--2nd column-->
-        <div class="card col-md-7" style="border:none;margin-top: 30px;">
-            <app-tvsales></app-tvsales>
+        <div class="card col-md-7" style="display:flex; border:none;margin-top: 30px;">
+            <h2 style="font-size:50px ; text-align:center">LED TV </h2>
+           <div class="row row-cols-1 row-cols-md-2">
+
+            <app-tvsales [tel]="telItem" *ngFor="let telItem of television"></app-tvsales>
+        </div>
         </div>
         <!--3rd column-->
-        <div class="col col-md-3" style="border: 2px solid black;">
+        <div class="col col-md-3" style="border-left: 5px solid rgb(143, 164, 244); border-radius:15px ;">
             <app-advertisment></app-advertisment>
-          
+
         </div>
     </div>
 </div>
+<app-footer></app-footer>

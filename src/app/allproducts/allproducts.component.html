@@ -1,0 +1,32 @@
+
+  <div class="banner2">
+    <div class="content2">
+        <h1>Get More Product</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, animi?</p>
+        <div id="bannerbtn2"><button>SHOP NOW</button></div>
+    </div>
+</div>
+<div class="container" id="product-cards">
+    <div class="row">
+        <h1> All Products</h1>
+            <div class= "col col-md-3 " *ngFor="let a of all">
+            <div class="card">
+                <div class="image"><img [src]="a.image" alt=""></div>
+                <div class="card-body">
+                    <div class="card-title">
+                    <h3>{{a.pname}}</h3>
+                </div>
+  
+                    <div class="star">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                    </div>
+                    <h5>{{a.price | currency : 'INR'}} <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>

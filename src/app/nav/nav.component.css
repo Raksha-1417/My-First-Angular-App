@@ -3,18 +3,24 @@ img{
     width: 90px;
 
 }
+#navbar{
+	background-color:  #1c1c50;
+}
 .navbar-dark .navbar-brand {
-	color: rgb(77, 106, 223);
+	color: rgb(131, 153, 241);
 	font-size: 35px;
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 2px;
 }
+#nav{
+	background-color:rgb(131, 153, 241) ;
+}
 .navbar-nav a {
-	font-size: 20px;
-    color: rgb(75, 105, 224);
+	font-size: 25px;
+    color: #1c1c50;
 	text-transform: capitalize;
-	font-weight: bolder;
+	font-weight: bold;
 	font-weight: 500;
 }
 

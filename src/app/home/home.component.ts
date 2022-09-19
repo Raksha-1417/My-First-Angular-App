@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as laps from '../data/products.json';
+import * as allprod from '../data/allproducts.json';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -9,7 +9,7 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
   name="Raksha"
-  product:any = (laps as any).default;
+  all:any = (allprod as any).default;
 
   ngOnInit(): void {
   }

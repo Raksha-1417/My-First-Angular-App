@@ -14,6 +14,8 @@ import { LaptopsComponent } from './laptops/laptops.component';
 import { TvComponent } from './tv/tv.component';
 import { TvsalesComponent } from './tv/tvsales/tvsales.component';
 import { AdvertismentComponent } from './advertisment/advertisment.component';
+import { AllproductsComponent } from './allproducts/allproducts.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -29,6 +31,8 @@ import { AdvertismentComponent } from './advertisment/advertisment.component';
     TvComponent,
     TvsalesComponent,
     AdvertismentComponent,
+    AllproductsComponent,
+    FooterComponent,
   
   ],
   imports: [

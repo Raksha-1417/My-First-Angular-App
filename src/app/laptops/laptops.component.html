@@ -1,7 +1,27 @@
 <h1 [style.text-align]="'center'" [style.font-weight]="'bold'" [style.font-size]="'45px'" [style.color]="'rgb(81, 81, 248)'">Laptops</h1>
 <div class="row">
+  <div class="col-md-1">
+    <div class="list-group" style="width: 200px;">
+      <a href="#" class="list-group-item list-group-item-action"><span class="fa-sharp fa-solid fa-bars">
+          Categories</span></a>
+
+
+
+      <a href="#" routerLink="/cards" class="list-group-item list-group-item-action list-group-item-info"><i
+          class="fa-solid fa-mobile"> Mobiles</i></a>
+      <i class="fa-solid fa-square-list"></i><a href="#" routerLink="/tv"
+        class="list-group-item list-group-item-action list-group-item-info"><i class="fa-solid fa-tv"> TV</i></a>
+      <a href="#" routerLink="/laptops" class="list-group-item list-group-item-action list-group-item-info"><i
+          class="fa-solid fa-laptop"> Laptops</i></a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-info"><i class="fa-solid fa-clock">
+          Accesories</i></a>
+
+
+    </div>
+
+  </div>
   
-  <div class="col col-md-10">
+  <div class="col col-md-9">
 <div class="container"  id="buy">
     <div *ngFor="let lap of product"  style="border:none;margin-top:30px;">
     <div class="card" >
@@ -18,7 +38,7 @@
             <h6 [style.text-align]="'justify'">{{lap.pdescription}}</h6>
            
         </div>
-        <div class="p-2 mb-2 bg-success text-white text-center">In Stock</div>
+      
         <div class="btn">
             <button type="button">Buy Now</button>
         </div>
@@ -30,11 +50,12 @@
   </div>
 </div>
 <div class="col col-md-2">
- <img src="/assets/images/adver 3.gif" height="800" width="500">
- <img routersrc="/assets/images/adver4.gif"  height="800" width="500">
+ <img src="/assets/images/adver 3.gif" height="800" width="600">
+ <img src="/assets/images/adver4.gif"  height="800" width="500">
 
 </div>
 </div>
+<app-footer></app-footer>
 
 
 

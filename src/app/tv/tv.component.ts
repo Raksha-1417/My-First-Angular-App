@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import * as tele from "./tvsales.json";
 @Component({
   selector: 'app-tv',
   templateUrl: './tv.component.html',
@@ -11,5 +11,6 @@ export class TvComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  television:any=(tele as any).default;
 
 }

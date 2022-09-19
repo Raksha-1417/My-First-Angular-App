@@ -1,0 +1,202 @@
+[
+    {
+        "pid": "1",
+        "image": "/assets/images/laptop1.jpg",
+        "pname": "ASUS TUF A15",
+        "price": 119999,
+        "pdescription": "Gaming Laptop (16GB/512GB SSD/Windows 11/Black/2.30 Kg)",
+        "status": "Instock"
+    },
+    {
+        "pid": "2",
+        "image": "/assets/images/tv2.webp",
+        "pname": "OnePlus Y1S ",
+        "price": 31999,
+        "pdescription": "Full HD LED Smart Android TV with Android 11 and Bezel-Less Frame"
+    },
+    {
+        "pid": "3",
+        "image":"/assets/images/samsungultra.jpg",
+        "pname": "Samsung S22 Ultra",
+        "price":119999,
+        "pdescription":"The first Galaxy S with embedded S Pen, 5G Phone",
+        "status": "Instock"
+       
+      },
+    {
+        "pid": "4",
+        "image": "/assets/images/laptop2.jpg",
+        "pname": "HP 15s",
+        "price": 74177,
+        "pdescription": "12th Gen Intel Core i5 16GB RAM/512GB SSD 15.6-inch(39.6 cm) Micro-Edge Anti-Glare FHD Laptop/Win 11/Intel Iris Xe Graphics.",
+        "status": "Instock"
+    },
+    {
+        "pid": "5",
+        "image": "/assets/images/laptop3.jpg",
+        "pname": "HP Pavilion x360",
+        "price": 65999,
+        "pdescription": "11th Gen Intel Core i3 14 inches FHD, IPS, Convertible Laptop (8GB RAM/256GB SSD/Audio by B&O/Windows 11 Home MS Office)",
+        "status": "Outstock"
+    },
+    {
+        "pid": "6",
+        "image":"/assets/images/galaxyfold.png",
+        "pname": "Samsung Z Fold 4",
+        "price":154999,
+        "pdescription":"Features 6.7″ display, Snapdragon 8+ Gen 1 chipset, 4800 mAh battery",
+        "status": "Outstock"
+       
+      },
+    
+    {
+        "pid": "7",
+        "image": "/assets/images/tv6.webp",
+        "pname": "SONY Bravia",
+        "price": 66900,
+        "pdescription": "Ultra HD (4K) LED Smart Android TV,Apps: Netflix|Prime"
+    },
+    {
+        "pid": "8",
+        "image":"/assets/images/oneplus10pro.png",
+        "pname": "OnePlus 10Pro 5G",
+        "price":73999,
+        "pdescription":"48MP Main Camera with Sony IMX 789 Lens (OIS enabled), 50MP Ultra-wide angle camera & 8MP",
+        "status": "Outstock"
+       
+      },
+    {
+        "pid": "9",
+        "image": "/assets/images/laptop4.jpg",
+        "pname": "ASUS TUF Dash F15",
+        "price": 169999,
+        "pdescription": "15.6-inch (39.62 cm) WQHD 165Hz/3ms, Intel Core i7-12650H 12th Gen, 6GB RTX 3060 Graphics, Gaming Laptop.",
+        "status": "Instock"
+    },
+    {
+        "pid": "10",
+        "image": "/assets/images/galaxyz.jpg",
+        "pname": "Samsung Z Flip 4",
+        "price": 89999,
+        "pdescription": "Style and function that fits in your pocket, 3700mAh (typical) battery.",
+        "status": "Instock"
+    },
+    {
+        "pid": "11",
+        "image": "/assets/images/iphone12.jpg",
+        "pname": "iPhone 12",
+        "price": 69999,
+        "pdescription": "6.1-inch (15.5 cm diagonal) Super Retina XDR display Ceramic Shield",
+        "status": "Outstock"
+    },
+    {
+        "pid": "12",
+        "image": "/assets/images/laptop5.jpg",
+        "pname": "ASUS Vivobook 15",
+        "price": 74999,
+        "pdescription": "5.6-inch (39.62 cms) FHD, AMD Ryzen 7 3700U, Thin and Light Laptop (16GB/512GB SSD/Integrated Graphics/Windows 11).",
+        "status": "Outstock"
+    },
+    {
+        "pid": "13",
+        "image":"/assets/images/vivox50.jpg",
+        "pname": "Samsung Z Flip 4",
+        "price":44990,
+        "pdescription":"Memory, Storage & SIM: 8GB RAM | 256GB internal memory | Dual SIM.",
+        "status": "Instock"
+       
+      },
+      {
+        "pid": "14",
+        "image":"/assets/images/oppo.jpg",
+        "pname": "Vivo V21",
+        "price":38990,
+        "pdescription":"Super AMOLED Display 64MP + 8MP + 2MP + 2MP, 32MP Front Camera",
+        "status": "Outstock"
+       
+      },
+    {
+        "pid": "15",
+        "image": "/assets/images/tv1.webp",
+        "pname": "Mi 4C",
+        "price": 19999,
+        "pdescription": "Resolution: Full HD 1920 x 1080 PixelsSound Output: 20 W"
+    },
+    {
+        "pid": "16",
+        "image": "/assets/images/samsung2.jpg",
+        "pname": "Samsung ",
+        "price": 115999,
+        "pdescription": "The Samsung Chromebook 4 is compact, but is built for convenience.",
+        "status": "Outstock"
+    },
+    {
+        "pid": "17",
+        "image": "/assets/images/tv5.webp",
+        "pname": "Panasonic",
+        "price": 54999,
+        "pdescription": "4K Ultra HD Smart Android LED TV, 3 HDMI Ports"
+    },
+    {
+        "pid": "18",
+        "image": "/assets/images/apple1.jpg",
+        "pname": "Apple Macbook",
+        "price": 124999,
+        "pdescription": "5.6-inch (39.62 cms) FHD, AMD Ryzen 7 3700U, Thin and Light Laptop (16GB/512GB SSD/Integrated Graphics/Windows 11).",
+        "status": "Instock"
+    },
+    {
+        "pid": "19",
+        "image":"/assets/images/oneplus10.png",
+        "pname": "OnePlus 10T 5G",
+         "price":49999,
+        "pdescription":"50MP Main Camera with Sony IMX766 and OIS, 8MP Ultrawide Camera 120 degree FOV, 2MP",
+        "status": "Instock"
+        
+      },
+   
+    {
+        "pid": "20",
+        "image": "/assets/images/tv3.webp",
+        "pname": "Mi 5A ",
+        "price": 35999,
+        "pdescription": "Full HD LED Smart Android TV with Dolby Audio (2022 Model)"
+    },
+    {
+        "pid": "21",
+        "image":"/assets/images/zenbook.jpg",
+        "pname": "ASUS Zenbook 14 Pro",
+         "price":144999,
+        "pdescription":"Windows 11 Home - ASUS recommends, Intel® Evo™ certified laptop Up to 12th gen Intel® Core™ i9 processor",
+        "status": "Outstock"
+        
+      },
+      {
+        "pid": "22",
+        "image":"/assets/images/samsung1.png",
+        "pname": "Samsung Galaxy Book 2",
+         "price":60999,
+        "pdescription":"Windows 11 Home 15.6 inch, Intel Core i5-1235UIntel Iris Xe Graphics256GB/ 8GBGraphite",
+        "status": "Instock"
+        
+      },
+    {
+        "pid": "23",
+        "image": "/assets/images/tv6.webp",
+        "pname": "SONY X80AJ",
+        "price": 124999,
+        "pdescription": "Ultra HD (4K) LED Smart Google TV,Apps: Netflix|Prime"
+    },
+    {
+        "pid": "24",
+        "image":"/assets/images/oneplusnordce.png",
+        "pname": "OnePlus Nord CE 2 Lite 5G",
+        "price":19999,
+        "pdescription":"Features 6.7″ display, Snapdragon 8+ Gen 1 chipset, 4800 mAh battery",
+        "status": "Instock"
+       
+      }
+   
+     
+     
+]

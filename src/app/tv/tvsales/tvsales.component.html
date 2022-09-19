@@ -1,27 +1,31 @@
+<div class="row row-cols-1 row-cols-md-2">
 
-<div class="container"  id="buy">
-    <div *ngFor="let tel of television"  style="border:none;margin-top:30px;">
-    <div class="card" >
-        
-        <div class="product-image">
-            <img [style.width]="'10%'" [src]="tel.image" [style.height]="'200px'" [style.width] ="'200px'" alt="">
-        </div>
-        <div class="product-info">
-            <h4>{{tel.pname | uppercase}}</h4>
-            <h3>Price : {{tel.price | currency : 'INR'}}</h3>
-            <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
-        </div>
-        <div class="product-info" [hidden]="productDetail">
-            <h6 [style.text-align]="'justify'">{{tel.pdescription}}</h6>
-           
-        </div>
-      
-        <div class="btn">
-            <button type="button">Buy Now</button>
-        </div>
-    
+    <div class="col col-md-10">
+        <div class="container" id="buy">
 
-   
+            <div class="card">
+
+                <div class="product-image">
+                    <img [style.width]="'10%'" [src]="tel.image" [style.height]="'200px'" [style.width]="'200px'"
+                        alt="">
+                </div>
+                <div class="product-info">
+                    <h4>{{tel.pname | uppercase}}</h4>
+                    <h3>Price : {{tel.price | currency : 'INR'}}</h3>
+                    <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
+                </div>
+                <div class="product-info" [hidden]="productDetail">
+                    <h6 [style.text-align]="'justify'">{{tel.pdescription}}</h6>
+
+                </div>
+
+                <div class="btn">
+                    <button type="button">Buy Now</button>
+                </div>
+
+
+
+            </div>
+        </div>
     </div>
-    </div>
-  </div>
+</div>

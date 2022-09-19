@@ -7,7 +7,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import {LaptopsComponent } from './laptops/laptops.component';
 import { TvComponent } from './tv/tv.component';
-
+import { AllproductsComponent } from './allproducts/allproducts.component';
 
 //Configure the routing path for the above imported components
 const routes: Routes = [
@@ -16,7 +16,8 @@ const routes: Routes = [
   {path:'contact',component:ContactComponent},
   {path:'about',component:AboutComponent},
   {path:'laptops',component:LaptopsComponent},
-  {path:'tv', component:TvComponent}
+  {path:'tv', component:TvComponent},
+  {path:'allproducts', component:AllproductsComponent}
   
 ];
 

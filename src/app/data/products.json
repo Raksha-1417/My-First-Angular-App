@@ -59,29 +59,29 @@
       },
       {
         "pid": "7",
-        "image":"/assets/images/laptop5.jpg",
-        "pname": "ASUS Vivobook 15",
-         "price":74999,
-        "pdescription":"5.6-inch (39.62 cms) FHD, AMD Ryzen 7 3700U, Thin and Light Laptop (16GB/512GB SSD/Integrated Graphics/Windows 11).",
+        "image":"/assets/images/zenbook.jpg",
+        "pname": "ASUS Zenbook 14 Pro",
+         "price":144999,
+        "pdescription":"Windows 11 Home - ASUS recommends, Intel® Evo™ certified laptop Up to 12th gen Intel® Core™ i9 processor",
         "status": "Outstock"
         
       },
       {
         "pid": "8",
-        "image":"/assets/images/laptop5.jpg",
-        "pname": "ASUS Vivobook 15",
-         "price":74999,
-        "pdescription":"5.6-inch (39.62 cms) FHD, AMD Ryzen 7 3700U, Thin and Light Laptop (16GB/512GB SSD/Integrated Graphics/Windows 11).",
+        "image":"/assets/images/samsung1.png",
+        "pname": "Samsung Galaxy Book 2",
+         "price":60999,
+        "pdescription":"Windows 11 Home 15.6 inch, Intel Core i5-1235UIntel Iris Xe Graphics256GB/ 8GBGraphite",
         "status": "Instock"
         
       },
       {
         "pid": "9",
-        "image":"/assets/images/laptop5.jpg",
-        "pname": "ASUS Vivobook 15",
-         "price":74999,
-        "pdescription":"5.6-inch (39.62 cms) FHD, AMD Ryzen 7 3700U, Thin and Light Laptop (16GB/512GB SSD/Integrated Graphics/Windows 11).",
-        "status": "Instock"
+        "image": "/assets/images/samsung2.jpg",
+        "pname": "Samsung Chromebook",
+        "price": 115999,
+        "pdescription": "The Samsung Chromebook 4 is compact, but is built for convenience.",
+        "status": "Outstock"
         
       }
 
