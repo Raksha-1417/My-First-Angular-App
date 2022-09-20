@@ -52,15 +52,17 @@ img:hover{
 .product-info{
     font-size: 15px;
     padding: 0 20px;
+    margin-top: 30px;
     margin-bottom: 20px;
+    height: 165px;
 }
 h4{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     text-align: center;
 }
 h4{
-    font-size: 15px;
+    font-size: 22px;
     font-weight: bold;
     text-align: center;
 }
@@ -68,7 +70,7 @@ h4{
     width:100%;
     margin-top: 10px;
     padding:5px;
-    background: rgb(97, 55, 236);
+    background:  rgb(153, 136, 251);
     outline: none;
   
     font-size: 20px;
@@ -80,14 +82,17 @@ button{
     width:100%;
     align-items: flex-end;
     padding:5px;
-    background: rgb(97, 55, 236);
+    background: rgb(153, 136, 251);
     border: 1px solid  rgb(15, 14, 14);
     outline: none;
-    color: blanchedalmond;
+    color: rgb(17, 17, 17);
     font-size: 28px;
     cursor: pointer;
     border-radius:0 0 15px 15px ;
 } 
+.checked{
+    color: rgb(255, 187, 0);
+}
 
 
 .list-group{

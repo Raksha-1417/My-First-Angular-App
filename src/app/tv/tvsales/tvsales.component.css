@@ -86,7 +86,7 @@
      width:100%;
      margin-top: 10px;
      padding:5px;
-     background: rgb(97, 55, 236);
+     background: rgb(153, 136, 251);
      outline: none;
    
      font-size: 20px;
@@ -98,10 +98,10 @@
      width:100%;
      align-items: flex-end;
      padding:5px;
-     background: rgb(97, 55, 236);
+     background:  rgb(153, 136, 251);
      border: 1px solid  rgb(15, 14, 14);
      outline: none;
-     color: blanchedalmond;
+     color: rgb(11, 11, 11);
      font-size: 28px;
      cursor: pointer;
      border-radius:0 0 15px 15px ;

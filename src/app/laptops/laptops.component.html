@@ -32,10 +32,24 @@
         <div class="product-info">
             <h4>{{lap.pname | uppercase}}</h4>
             <h4>Price : {{lap.price | currency : 'INR'}}</h4>
-            <span (click)="showproductToggle()" [ngClass]="toggleDetail()"></span>
+            <app-counter></app-counter><br>
+            <div class="show"style="height:30px">
+            <a class="text-success " style="font-size:20px ; font-weight:bold;">Show Details<span (click)="showproductToggle()" [ngClass]="toggleDetail()"></span></a></div>
+            <br> 
+            
         </div>
         <div class="product-info" [hidden]="ProductDetail">
-            <h6 [style.text-align]="'justify'">{{lap.pdescription}}</h6>
+            <h5 [style.text-align]="'justify'">{{lap.pdescription}}</h5>
+            
+            <div class="star">
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <span><i class="fa-solid fa-cart-shopping"></i></span>
+          </div>
+          
            
         </div>
       

@@ -16,6 +16,8 @@ import { TvsalesComponent } from './tv/tvsales/tvsales.component';
 import { AdvertismentComponent } from './advertisment/advertisment.component';
 import { AllproductsComponent } from './allproducts/allproducts.component';
 import { FooterComponent } from './footer/footer.component';
+import { CounterComponent } from './counter/counter.component';
+import { CounterchildComponent } from './counter/counterchild/counterchild.component';
 
 
 @NgModule({
@@ -33,6 +35,8 @@ import { FooterComponent } from './footer/footer.component';
     AdvertismentComponent,
     AllproductsComponent,
     FooterComponent,
+    CounterComponent,
+    CounterchildComponent,
   
   ],
   imports: [
