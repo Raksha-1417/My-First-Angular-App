@@ -1,0 +1,160 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "pname": "Dell Inspiron 15",
+      "pdescription": "Intel Core i5 11th Gen (15.6 inch, 8GB, 512GB)",
+      "price": 53999,
+      "img": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1663415685/Croma%20Assets/Computers%20Peripherals/Laptop/Images/245473_0_q9w9fh.png/mxw_2048,s_webp,f_auto"
+    },
+    {
+      "id": 2,
+      "pname": "Redmi 10 ",
+      "pdescription": "Redmi 10 ",
+      "price": 12500,
+      "img": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662438345/Croma%20Assets/Communication/Mobiles/Images/251043_usggge.png/mxw_2048,s_webp,f_auto"
+    },
+    {
+      "id": 3,
+      "pname": "SAMSUNG Galaxy F42 5G",
+      "pdescription": "6GB RAM, 128GB, Matte Black",
+      "price": 25000,
+      "img": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662435102/Croma%20Assets/Communication/Mobiles/Images/244936_evq0em.png/mxw_2048,s_webp,f_auto"
+    },
+    {
+      "id": 4,
+      "pname": "Vivo Y21",
+      "pdescription": "4GB RAM, 64GB, Midnight Blue",
+      "price": 17800,
+      "img": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662422853/Croma%20Assets/Communication/Mobiles/Images/242178_fthzs6.png/mxw_2048,s_webp,f_auto"
+    },
+    {
+      "id": 5,
+      "pname": "Redmi Note 10T 5G",
+      "pdescription": "Redmi 8GB RAM",
+      "price": "14900",
+      "img": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662421110/Croma%20Assets/Communication/Mobiles/Images/241196_uzmkan.png/mxw_2048,s_webp,f_auto"
+    },
+    {
+      "id": 6,
+      "pname": "Lenovo IdeaPad 3 15IMH05",
+      "pdescription": "Intel Core i7 10th Gen (15.6 inch, 8GB, 512GB, Windows 10",
+      "price": 61990,
+      "img": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1663351547/Croma%20Assets/Computers%20Peripherals/Laptop/Images/235011_0_p0woxb.png/mxw_2048,s_webp,f_auto"
+    },
+    {
+      "id": 7,
+      "pname": "ASUS TUF Gaming A17",
+      "pdescription": "Ryzen 7 Windows 11 Home Laptop (8GB RAM, 512GB SSD)",
+      "price": 67990,
+      "img": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1656156645/Croma%20Assets/Computers%20Peripherals/Laptop/Images/257130_wozsob.png/mxw_2048,s_webp,f_auto"
+    },
+    {
+      "id": 8,
+      "pname": "Lenovo IdeaPad Gaming 3",
+      "pdescription": "AMD Ryzen 7 (15.6 inch, 16GB, 512GB, Windows 11 Home)",
+      "price": 68990,
+      "img": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1657019941/Croma%20Assets/Computers%20Peripherals/Laptop/Images/256996_imvj8a.png/mxw_2048,s_webp,f_auto"
+    },
+    {
+      "id": 9,
+      "pname": "Croma 140 cm (55 inch)",
+      "pdescription": "4K Ultra HD LED WebOS TV (2022 model)",
+      "price": 75990,
+      "img": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1660200323/Croma%20Assets/Entertainment/Television/Images/251389_blvogn.png/mxw_2048,s_webp,f_auto"
+    },
+    {
+      "id": 10,
+      "pname": "SONY XR-Series 189 cm (75 inch)",
+      "pdescription": "ltra HD 4K Android TV with Dolby Vision & Dolby Atmos",
+      "price": 265990,
+      "img": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1661834739/Croma%20Assets/Entertainment/Television/Images/260214_o6p5jb.png/mxw_2048,s_webp,f_auto"
+    },
+    {
+      "id": 12,
+      "pname": "Acer I Series 80cm (32 Inch)",
+      "pdescription": "HD Ready LED Android Smart TV",
+      "price": "19999",
+      "img": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1660132157/Croma%20Assets/Entertainment/Television/Images/255842_fkaauu.png/mxw_2048,s_webp,f_auto"
+    }
+  ],
+  "users": [
+    {
+      "username": "Raksha",
+      "useremail": "raksha@gmail.com",
+      "password": "raksha14",
+      "mobile": "9591617518",
+      "id": 3
+    },
+    {
+      "username": "Jancy",
+      "useremail": "jancy@gmail.com",
+      "password": "jancy123",
+      "mobile": "",
+      "id": 4
+    },
+    {
+      "username": "Rashmi",
+      "useremail": "rashmi@gmail.com",
+      "password": "",
+      "mobile": "",
+      "id": 5
+    },
+    {
+      "username": "Riya",
+      "useremail": "riya@gmail.com",
+      "password": "riya14",
+      "mobile": "",
+      "id": 6
+    },
+    {
+      "username": "uiii",
+      "useremail": "uii",
+      "password": "87",
+      "mobile": "",
+      "id": 7
+    },
+    {
+      "username": "gu",
+      "useremail": "gu@gmail.com",
+      "password": "",
+      "mobile": "",
+      "id": 8
+    },
+    {
+      "username": "Rekha",
+      "useremail": "rekha@gmail.com",
+      "password": "",
+      "mobile": "",
+      "id": 9
+    },
+    {
+      "username": "Bhairav",
+      "useremail": "bhairavi@gmail.com",
+      "password": "56789",
+      "mobile": "",
+      "id": 10
+    },
+    {
+      "username": "admin",
+      "useremail": "admin@gmail.com",
+      "password": "admin123",
+      "mobile": "",
+      "id": 10
+    },
+    {
+      "username": "rajkumar",
+      "useremail": "raj@gmail.com",
+      "password": "raj@123",
+      "mobile": "9980317050",
+      "id": 13
+    },
+    {
+      "username": "Rajath",
+      "useremail": "rajath@gmail.com",
+      "password": "rajath12",
+      "mobile": "9591617518",
+      "id": "12"
+    }
+  ]
+}

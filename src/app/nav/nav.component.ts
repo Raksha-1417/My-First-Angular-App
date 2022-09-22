@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { UserService } from '../user.service';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authService:UserService) { }
+  auth:boolean=false;
+  
   title = 'M-Store';
   public logo="/assets/images/undraw_android_jr64 (1).svg";
   onSearch()
@@ -27,6 +29,13 @@ export class NavComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.authService.authSubject.subscribe(
+      data => 
+      {
+        console.log('auth inside nav component: ' + data);
+        this.auth = data;
+      }
+    );
   }
 
 }

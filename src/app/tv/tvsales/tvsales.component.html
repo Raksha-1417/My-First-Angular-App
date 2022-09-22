@@ -12,7 +12,8 @@
                 <div class="product-info">
                     <h4>{{tel.pname | uppercase}}</h4>
                     <h3>Price : {{tel.price | currency : 'INR'}}</h3>
-                    <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
+                    <app-counter></app-counter><br>
+                    <a class="text-success " style="font-size:20px ; font-weight:bold;">Show Details <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span></a>
                 </div>
                 <div class="product-info" [hidden]="productDetail">
                     <h6 [style.text-align]="'justify'">{{tel.pdescription}}</h6>

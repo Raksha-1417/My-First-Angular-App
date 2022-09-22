@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 //accessing ngModel for 2-way binding
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -18,6 +18,10 @@ import { AllproductsComponent } from './allproducts/allproducts.component';
 import { FooterComponent } from './footer/footer.component';
 import { CounterComponent } from './counter/counter.component';
 import { CounterchildComponent } from './counter/counterchild/counterchild.component';
+import { RegisterComponent } from './register/register.component';
+import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import { ProductdetailsComponent } from './productdetails/productdetails.component';
 
 
 @NgModule({
@@ -37,12 +41,17 @@ import { CounterchildComponent } from './counter/counterchild/counterchild.compo
     FooterComponent,
     CounterComponent,
     CounterchildComponent,
+    RegisterComponent,
+    LoginComponent,
+    ProductdetailsComponent
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

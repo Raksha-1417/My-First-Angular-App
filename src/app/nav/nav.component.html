@@ -4,8 +4,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <!--STRING INTERPOLATION-->
-      <!--PROPERTY BINDING IN img tag-->
+     
       <a class="navbar-brand " href="#">
         <img [src]="logo" alt="Gadgets">{{title}}</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +26,9 @@
 
           
         </ul> -->
+        <button routerLink="register" *ngIf="!auth" class="btn btn-outline-info">Register</button>
         <form class="d-flex">
+
           <input type="text" #productname placeholder="Enter Product name" style="border-radius:10px; height: 50px; margin-left: 950px;">&nbsp;
           <!--EVENT BINDING-->
           <button class="btn btn-outline-info" type="submit" (click)="search_product(productname.value);productname.value=''" 
@@ -36,6 +37,8 @@
           <br>
          
         </form>
+        <a class="btn btn-info" type="submit" style="border-radius:10px;color:black;" routerLink="login"
+        *ngIf="auth">Logout</a>
         
       </div>
     </div>
@@ -51,19 +54,22 @@
           <li class="nav-item">
             <!--href - render the entire page-->
             <!--SPA - Partial Rendering - routerLink-->
-            <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+            <a class="nav-link active" aria-current="page"  routerLink="">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="cards">Mobiles</a>
+            <a class="nav-link" routerLink="cards" *ngIf="auth">Mobiles</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="laptops">Laptops</a>
+            <a class="nav-link" routerLink="laptops" *ngIf="auth">Laptops</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="tv">TV</a>
+            <a class="nav-link" routerLink="tv" *ngIf="auth">TV</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="contact">Customer Care</a>
+            <a class="nav-link" routerLink="productdetails" *ngIf="auth">Product Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="contact" *ngIf="auth">Customer Care</a>
           </li>
 
           

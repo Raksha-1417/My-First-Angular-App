@@ -8,6 +8,11 @@ import { AboutComponent } from './about/about.component';
 import {LaptopsComponent } from './laptops/laptops.component';
 import { TvComponent } from './tv/tv.component';
 import { AllproductsComponent } from './allproducts/allproducts.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { ProductdetailsComponent } from './productdetails/productdetails.component';
+
+
 
 //Configure the routing path for the above imported components
 const routes: Routes = [
@@ -17,7 +22,10 @@ const routes: Routes = [
   {path:'about',component:AboutComponent},
   {path:'laptops',component:LaptopsComponent},
   {path:'tv', component:TvComponent},
-  {path:'allproducts', component:AllproductsComponent}
+  {path:'allproducts', component:AllproductsComponent},
+  {path:'register', component:RegisterComponent},
+  {path:'login', component:LoginComponent},
+  {path:'productdetails', component:ProductdetailsComponent},
   
 ];
 
