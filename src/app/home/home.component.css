@@ -152,30 +152,6 @@ h4 {
   text-align: center;
 }
 
-/* .right{
-        margin-top: -15%;
-    }
-    .card{
-        align-items: center;
-        justify-content: center;
-        background-color: bisque;
-        
-      
-        border: 3px solid rgb(96, 103, 235);
-        border-radius: 20px;
-       
-    }
-    .list-group{
-        margin-left: 30px;
-        border: 2px solid black;
-        box-shadow: 0 0 7px rgba(236, 18, 18, 0.834);
-        margin-bottom: 30px;
-      
-      }
-      .list-group-item{
-        border: 2px solid black;
-      }
-       */
 #viewmorebtn:hover {
   background-color: #1c1c50;
   color: white;
@@ -195,4 +171,35 @@ h4 {
   background: rgb(237, 82, 82);
   border: 2px solid #1c1c50;
   transition: 0.5s ease;
+}
+/*flickity*/
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.bbb_main_container .carousel {
+  background: rgb(239, 239, 245);
+  
+  margin-top: 20px;
+  margin-right: 80px;
+}
+
+.carousel-cell {
+  width: 25%;
+  height: 200px;
+  margin-right: 75px;
+  margin-top: 40px;
+  /* background: #8C8; */
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* .carousel-cell.is-selected {
+  /* background: #ED2;
+} */
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  
 }

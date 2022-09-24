@@ -1,14 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,EventEmitter, Output } from '@angular/core';
 import { UserService } from '../user.service';
+import { CartService } from '../cart.service';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
+  public searchTerm:string=''
 
-  constructor(private authService:UserService) { }
+  constructor(private authService:UserService,private cartSvc:CartService) { }
   auth:boolean=false;
+  cartCount:number=0;
+  
+
   
   title = 'M-Store';
   public logo="/assets/images/undraw_android_jr64 (1).svg";
@@ -36,6 +41,22 @@ export class NavComponent implements OnInit {
         this.auth = data;
       }
     );
+    this.cartSvc.getCartItems().subscribe(
+      (response)=>
+      {
+        this.cartCount=response.length;
+        console.log(this.cartCount);
+      }
+    )
+    this.cartSvc.countSubject.subscribe(
+      (response)=>
+      {
+        this.cartCount=response;
+        console.log(this.cartCount);
+      }
+    )
   }
+  
+  
 
 }

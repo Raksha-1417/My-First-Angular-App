@@ -66,16 +66,9 @@
     {
       "id": 10,
       "pname": "SONY XR-Series 189 cm (75 inch)",
-      "pdescription": "ltra HD 4K Android TV with Dolby Vision & Dolby Atmos",
+      "pdescription": "ltra HD 4K Android TV with Dolby Vision & Dolby ",
       "price": 265990,
       "img": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1661834739/Croma%20Assets/Entertainment/Television/Images/260214_o6p5jb.png/mxw_2048,s_webp,f_auto"
-    },
-    {
-      "id": 12,
-      "pname": "Acer I Series 80cm (32 Inch)",
-      "pdescription": "HD Ready LED Android Smart TV",
-      "price": "19999",
-      "img": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1660132157/Croma%20Assets/Entertainment/Television/Images/255842_fkaauu.png/mxw_2048,s_webp,f_auto"
     }
   ],
   "users": [
@@ -155,6 +148,24 @@
       "password": "rajath12",
       "mobile": "9591617518",
       "id": "12"
+    }
+  ],
+  "cart": [
+    {
+      "pname": "SONY Bravia 108 cm (43 inch)",
+      "pdescription": "Ultra HD (4K) LED Smart Android TV,Apps: Netflix|Prime",
+      "price": 66900,
+      "image": "/assets/images/tv6.webp",
+      "quantity": 1,
+      "id": 1
+    },
+    {
+      "pname": "SONY Bravia 108 cm (43 inch)",
+      "pdescription": "Ultra HD (4K) LED Smart Android TV,Apps: Netflix|Prime",
+      "price": 66900,
+      "image": "/assets/images/tv6.webp",
+      "quantity": 1,
+      "id": 2
     }
   ]
 }

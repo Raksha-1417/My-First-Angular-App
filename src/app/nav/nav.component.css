@@ -40,5 +40,19 @@ img{
 	.dropdown-menu > li:hover > .dropdown-submenu {
 	display: block;
 	} */
-
+	.search-area .control-group {
+		position: relative;
+	  }
+	  /* .top-search-holder {
+		padding: 0 15px;
+	  } 
+	  .top-search-holder .search-area .search-field {
+		width: 43%;  
+	  }
+	  .top-search-holder .search-area .control-group .search-button {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+	  } */
+	  
 	

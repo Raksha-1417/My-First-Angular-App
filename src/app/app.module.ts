@@ -22,6 +22,8 @@ import { RegisterComponent } from './register/register.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
+import { CartitemsComponent } from './cartitems/cartitems.component';
+import { FilterPipe } from './filter.pipe';
 
 
 @NgModule({
@@ -43,7 +45,9 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
     CounterchildComponent,
     RegisterComponent,
     LoginComponent,
-    ProductdetailsComponent
+    ProductdetailsComponent,
+    CartitemsComponent,
+    FilterPipe
   
   ],
   imports: [

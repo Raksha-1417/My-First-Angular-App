@@ -1,3 +1,4 @@
+<!-- <app-search></app-search> -->
 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true"
@@ -5,7 +6,7 @@
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-  
+
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
       <img src="/assets/images/samsung.jpg" class="d-block w-100" alt="CSS">
@@ -117,7 +118,8 @@
 
                 <div class="col">
                   <div class="container" id="buy">
-                    <div *ngFor="let a of all.slice(0,6)" style="border:none;margin-top:30px;">
+                    <div *ngFor="let a of all.slice(0,3)" style="border:none;margin-top:30px;">
+
                       <div class="card d-flex flex-column h-150">
 
                         <div class="product-image">
@@ -130,7 +132,8 @@
                         </div>
                         <div class="bn">
                           <button class="btn btn-dark btn-sm float-center"
-                            style="width:150px;height:50px;margin-top:30px;background-color: rgb(153, 136, 251);color: black;">Buy Now</button>
+                            style="width:150px;height:50px;margin-top:30px;background-color: rgb(153, 136, 251);color: black;">Buy
+                            Now</button>
                         </div>
 
 
@@ -141,10 +144,31 @@
 
 
                 </div>
-
+                <button class="btn btn-danger" routerLink="allproducts" id="viewmorebtn">View More</button><br>
+                <hr>
 
               </div>
-              <button class="btn btn-danger" routerLink="allproducts" id="viewmorebtn">View More</button>
+              <div class="bb_main_container">
+                <h3 class="bbb_viewed_title" style="text-align:center ;margin-top: 50px;">Limited Deals<i class="fa-solid fa-square-list"></i></h3>
+                <!-- Flickity HTML init -->
+                <div class="carousel" data-flickity='{ "groupCells": true }'>
+                  
+                 
+                  <div class="carousel-cell" *ngFor="let l of laptop.slice(0,6)" >
+                    <img [src]="l.image" routerLink="laptops" [style.height]="'200px'" [style.width]="'200px'" alt="">
+                    <div class="bn">
+                    <button class="btn btn-dark btn-sm float-center"
+                      style="width:150px;background-color: rgb(153, 136, 251);color: black;">Buy
+                      Now</button>
+                  </div>
+                   
+
+                  </div>
+                </div>
+
+                </div>
+              </div>
+
 
 
             </div>
@@ -154,8 +178,10 @@
         </div>
       </div>
 
+
     </div>
-  </div>
+
+  
 </section>
 
 

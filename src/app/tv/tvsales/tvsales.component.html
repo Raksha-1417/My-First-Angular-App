@@ -12,16 +12,17 @@
                 <div class="product-info">
                     <h4>{{tel.pname | uppercase}}</h4>
                     <h3>Price : {{tel.price | currency : 'INR'}}</h3>
-                    <app-counter></app-counter><br>
+                    <!-- <app-counter></app-counter><br> -->
                     <a class="text-success " style="font-size:20px ; font-weight:bold;">Show Details <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span></a>
                 </div>
                 <div class="product-info" [hidden]="productDetail">
                     <h6 [style.text-align]="'justify'">{{tel.pdescription}}</h6>
 
                 </div>
-
+                <input type="number" name="quantity" [(ngModel)]="quantity" style="width:50px; margin-left:110px;text-align:center;border-radius:10px;background-color: rgb(178, 178, 243);" min="1" max="10">
+                Quantity: 
                 <div class="btn">
-                    <button type="button">Buy Now</button>
+                    <button type="button"  (click)="addToCart(tel)">Add To cart</button>
                 </div>
 
 

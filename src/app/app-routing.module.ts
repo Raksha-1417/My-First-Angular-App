@@ -11,6 +11,9 @@ import { AllproductsComponent } from './allproducts/allproducts.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
+import { TvsalesComponent } from './tv/tvsales/tvsales.component';
+import { CartitemsComponent } from './cartitems/cartitems.component';
+import { SearchComponent } from './search/search.component';
 
 
 
@@ -22,10 +25,14 @@ const routes: Routes = [
   {path:'about',component:AboutComponent},
   {path:'laptops',component:LaptopsComponent},
   {path:'tv', component:TvComponent},
+  {path:'tvsles',component:TvsalesComponent},
   {path:'allproducts', component:AllproductsComponent},
   {path:'register', component:RegisterComponent},
   {path:'login', component:LoginComponent},
   {path:'productdetails', component:ProductdetailsComponent},
+  {path:'cartitem',component:CartitemsComponent},
+  {path:'search', component:SearchComponent}
+
   
 ];
 

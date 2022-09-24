@@ -7,6 +7,7 @@
         </ng-container>
     </div>
 </div> -->
+
  <h1 [style.text-align]="'center'" [style.font-weight]="'bold'" [style.font-size]="'45px'" [style.color]="'rgb(81, 81, 248)'">Mobiles</h1>
 <div class="container"  id="buy">
     
@@ -28,7 +29,7 @@
             <button type="button">Buy Now</button>
         </div>
     </div>
-    <div *ngSwitchCase="'Outstock'">
+    <div *ngSwitchCase="'Outstock'" style="opacity:56% ;">
         <div class="product-image">
             <img [src]="item.image" [style.height]="'200px'" [style.width] ="'200px'" alt="">
         </div>
@@ -44,7 +45,7 @@
         
         <div class="btn">
            
-            <button type="button">Buy Now</button>
+            <button type="button" (click)="onBuy()">Buy Now</button>
         </div>
     </div>
 

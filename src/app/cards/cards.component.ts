@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-cards',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cards.component.css']
 })
 export class CardsComponent implements OnInit {
-
+  searchText: string='';
   constructor() { }
   ProductDetails = [
     {
@@ -94,6 +95,14 @@ export class CardsComponent implements OnInit {
   ]
 
   ngOnInit(): void {
+  }
+  onSearchTextEntered(searchValue : string){
+    this.searchText=searchValue;
+    // console.log(this.searchText);
+
+  }
+  onBuy(){
+    Swal.fire('Oops', 'This Product is out of Stock', 'error');
   }
 
 }

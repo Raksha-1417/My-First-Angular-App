@@ -11,37 +11,43 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            href - render the entire page-->
-            <!--SPA - Partial Rendering - routerLink-->
-           <!-- <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+
+            <button routerLink='cartitem' style="border:none; color:rgb(243, 156, 207); border-radius: 10px;" *ngIf="auth">
+              <span class="fa-solid fa-cart-shopping fa-10x" style="font-size:35px;color:rgb(119, 135, 239)"><sup class="text-danger" style="font-size:25px;margin-left: 3px;;">{{cartCount}}</sup></span>
+            </button> &nbsp;&nbsp;&nbsp;
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="cards">Products</a>
+            <button routerLink="register" *ngIf="!auth" class="btn btn-outline-info" style="color:rgb(11, 11, 11);font-size:20px;background-color:rgb(174, 184, 246)">Register/Sign in</button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="contact">Customer Care</a>
+            <a class="btn btn-outline-dark" type="submit" style="border-radius:10px;font-size:20px;background-color:rgb(174, 184, 246)" routerLink="login"
+            *ngIf="auth">Logout</a>
+            
           </li>
+          <form >
+       
+
+            <!-- <input type="text" #productname placeholder="Enter Product name" style="border-radius:10px; height: 50px; margin-left: 750px;">&nbsp;
+           
+            <button class="btn btn-outline-info" type="submit" (click)="search_product(productname.value);productname.value=''" 
+            style="border-radius:10px;height: 50px;">Search</button>
+           
+            <br> -->
+            
+           
+           
+          </form>
 
           
-        </ul> -->
-        <button routerLink="register" *ngIf="!auth" class="btn btn-outline-info">Register</button>
-        <form class="d-flex">
-
-          <input type="text" #productname placeholder="Enter Product name" style="border-radius:10px; height: 50px; margin-left: 950px;">&nbsp;
-          <!--EVENT BINDING-->
-          <button class="btn btn-outline-info" type="submit" (click)="search_product(productname.value);productname.value=''" 
-          style="border-radius:10px;height: 50px;">Search</button>
-          <!--Access the Search Component-->
-          <br>
-         
-        </form>
-        <a class="btn btn-info" type="submit" style="border-radius:10px;color:black;" routerLink="login"
-        *ngIf="auth">Logout</a>
+        </ul>
+       
         
+       
       </div>
     </div>
+
     
   </nav>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -81,8 +87,8 @@
     
   </nav>
 
-  <br>&nbsp;&nbsp;&nbsp;
+  <!-- <br>&nbsp;&nbsp;&nbsp;
   <app-search [product]="productentered"></app-search>   <!--PROPERTY BINDING-->
   <br>
-  <br>
+  <br> 
   

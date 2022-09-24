@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from '../cart.service';
 import * as tele from "./tvsales.json";
 @Component({
   selector: 'app-tv',
@@ -7,9 +8,12 @@ import * as tele from "./tvsales.json";
 })
 export class TvComponent implements OnInit {
 
+  
   constructor() { }
 
   ngOnInit(): void {
+ 
+
   }
   television:any=(tele as any).default;
 

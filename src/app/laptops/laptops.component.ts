@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,EventEmitter,Output } from '@angular/core';
 
 import * as laptops from '../data/products.json';
 @Component({
@@ -7,6 +7,7 @@ import * as laptops from '../data/products.json';
   styleUrls: ['./laptops.component.css']
 })
 export class LaptopsComponent implements OnInit {
+  searchText: string='';
 
   constructor() { }
   product:any = (laptops as any).default;
@@ -32,6 +33,12 @@ export class LaptopsComponent implements OnInit {
     }
     return detail;
  
+  }
+
+  onSearchTextEntered(searchValue : string){
+    this.searchText=searchValue;
+    // console.log(this.searchText);
+
   }
  
 }

@@ -1,3 +1,4 @@
+<app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
 <h1 [style.text-align]="'center'" [style.font-weight]="'bold'" [style.font-size]="'45px'" [style.color]="'rgb(81, 81, 248)'">Laptops</h1>
 <div class="row">
   <div class="col-md-1">
@@ -23,8 +24,9 @@
   
   <div class="col col-md-9">
 <div class="container"  id="buy">
-    <div *ngFor="let lap of product"  style="border:none;margin-top:30px;">
-    <div class="card" >
+    <div *ngFor="let lap of product" style="border:none;margin-top:30px;">
+    <div  *ngIf="searchText==='' ||lap.pname.toLowerCase().includes(searchText)">
+    <div class="card"  >
         
         <div class="product-image">
             <img [src]="lap.image" [style.height]="'200px'" [style.width] ="'200px'" alt="">
@@ -59,6 +61,7 @@
     
 
    
+    </div>
     </div>
     </div>
   </div>
