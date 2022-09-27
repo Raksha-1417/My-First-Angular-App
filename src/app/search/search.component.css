@@ -25,15 +25,28 @@
   } */
   .form-control {
 		border-radius: 3px;
+    border-color:2px solid black;
 		width: 600px;
-		margin-left: 80px;
+		margin-left: 420px;
 	}
-	
+	input{
+    border-color: #6464f2;
+    font-weight: bold;
+    font-size: 20px;
+    color: antiquewhite;
+
+  }
+  .form-control{
+    border-color:2px solid rgb(100, 100, 242);
+    background-color: rgb(197, 195, 244);
+    font-weight: bold;
+
+  }
 	.search-icon {
 		position: absolute;
-		z-index: 10;
-		right: 17%;
-		top: 45px;
-		color: rgb(167, 167, 248);
+		z-index: 12;
+		right: 35%;
+		top: 243px;
+		color: rgb(247, 112, 28);
 		height: 50px;
 	}

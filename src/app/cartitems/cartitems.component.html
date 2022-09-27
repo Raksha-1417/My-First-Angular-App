@@ -19,7 +19,7 @@
        
         <p><span>Shipping</span> <span>{{0| currency:'INR'}}</span></p>
         <hr>
-        <p><span>Total</span> <span> {{totalPrice(cart)|currency:'INR':'symbol':'3.0'}}</span></p><a href="https://rzp.io/i/J7OJXSP9KE" target="_blank"><i class="fa fa-shopping-cart"></i>Checkout</a>
+        <p><span>Total</span> <span> {{totalPrice(cart)|currency:'INR':'symbol':'3.0'}}</span></p><a href="checkout" target="_blank"><i class="fa fa-shopping-cart"></i>Checkout</a>
       </div>
     </div>
     <div class="row">
@@ -87,7 +87,7 @@
 <ng-container *ngIf="cart.length ==0">
   <div class="container">
       <div class="card">
-          <h5 class="card-title">My Cart</h5>
+          <h1 class="card-title">My Cart</h1>
       </div>
       <div class="center">
           <img src="/assets/images/cart.gif" alt="">
@@ -97,3 +97,4 @@
       </div>
   </div>
 </ng-container>
+<app-footer></app-footer>

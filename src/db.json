@@ -66,8 +66,8 @@
     {
       "id": 10,
       "pname": "SONY XR-Series 189 cm (75 inch)",
-      "pdescription": "ltra HD 4K Android TV with Dolby Vision & Dolby ",
-      "price": 265990,
+      "pdescription": "ltra HD 4K Android TV with Dolby",
+      "price": "26567",
       "img": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1661834739/Croma%20Assets/Entertainment/Television/Images/260214_o6p5jb.png/mxw_2048,s_webp,f_auto"
     }
   ],
@@ -100,41 +100,8 @@
       "mobile": "",
       "id": 6
     },
-    {
-      "username": "uiii",
-      "useremail": "uii",
-      "password": "87",
-      "mobile": "",
-      "id": 7
-    },
-    {
-      "username": "gu",
-      "useremail": "gu@gmail.com",
-      "password": "",
-      "mobile": "",
-      "id": 8
-    },
-    {
-      "username": "Rekha",
-      "useremail": "rekha@gmail.com",
-      "password": "",
-      "mobile": "",
-      "id": 9
-    },
-    {
-      "username": "Bhairav",
-      "useremail": "bhairavi@gmail.com",
-      "password": "56789",
-      "mobile": "",
-      "id": 10
-    },
-    {
-      "username": "admin",
-      "useremail": "admin@gmail.com",
-      "password": "admin123",
-      "mobile": "",
-      "id": 10
-    },
+
+  
     {
       "username": "rajkumar",
       "useremail": "raj@gmail.com",
@@ -148,24 +115,32 @@
       "password": "rajath12",
       "mobile": "9591617518",
       "id": "12"
+    },
+    {
+      "username": "Rekha",
+      "useremail": "rekha@gmail.com",
+      "password": "rekha",
+      "mobile": "",
+      "id": 14
     }
   ],
   "cart": [
     {
-      "pname": "SONY Bravia 108 cm (43 inch)",
-      "pdescription": "Ultra HD (4K) LED Smart Android TV,Apps: Netflix|Prime",
-      "price": 66900,
-      "image": "/assets/images/tv6.webp",
+      "pname": "HP 15s",
+      "pdescription": "12th Gen Intel Core i5 16GB RAM/512GB SSD 15.6-inch(39.6 cm) Micro-Edge Anti-Glare FHD Laptop/Win 11/Intel Iris Xe Graphics.",
+      "price": 74177,
+      "image": "/assets/images/laptop2.jpg",
       "quantity": 1,
       "id": 1
-    },
+    }
+  ],
+  "admin": [
     {
-      "pname": "SONY Bravia 108 cm (43 inch)",
-      "pdescription": "Ultra HD (4K) LED Smart Android TV,Apps: Netflix|Prime",
-      "price": 66900,
-      "image": "/assets/images/tv6.webp",
-      "quantity": 1,
-      "id": 2
+      "username": "admin",
+      "useremail": "admin@gmail.com",
+      "password": "admin123",
+      "mobile": "9591617518",
+      "id": 1
     }
   ]
 }

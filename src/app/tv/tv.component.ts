@@ -7,7 +7,7 @@ import * as tele from "./tvsales.json";
   styleUrls: ['./tv.component.css']
 })
 export class TvComponent implements OnInit {
-
+  searchText: string='';
   
   constructor() { }
 
@@ -16,5 +16,11 @@ export class TvComponent implements OnInit {
 
   }
   television:any=(tele as any).default;
+  
+  onSearchTextEntered(searchValue : string){
+    this.searchText=searchValue;
+    // console.log(this.searchText);
+
+  }
 
 }

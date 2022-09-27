@@ -7,11 +7,13 @@
         </ng-container>
     </div>
 </div> -->
+<app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
 
  <h1 [style.text-align]="'center'" [style.font-weight]="'bold'" [style.font-size]="'45px'" [style.color]="'rgb(81, 81, 248)'">Mobiles</h1>
 <div class="container"  id="buy">
     
     <div class="card" *ngFor="let item of ProductDetails" [ngSwitch]="item.status">
+        <div  *ngIf="searchText==='' ||item.pname.toLowerCase().includes(searchText)">
         <div *ngSwitchCase="'Instock'">
         <div class="product-image">
             <img [src]="item.image" [style.height]="'200px'" [style.width] ="'200px'" alt="">
@@ -29,7 +31,9 @@
             <button type="button">Buy Now</button>
         </div>
     </div>
+</div>
     <div *ngSwitchCase="'Outstock'" style="opacity:56% ;">
+        <div  *ngIf="searchText==='' ||item.pname.toLowerCase().includes(searchText)">
         <div class="product-image">
             <img [src]="item.image" [style.height]="'200px'" [style.width] ="'200px'" alt="">
         </div>
@@ -46,6 +50,7 @@
         <div class="btn">
            
             <button type="button" (click)="onBuy()">Buy Now</button>
+        </div>
         </div>
     </div>
 

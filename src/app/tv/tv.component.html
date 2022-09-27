@@ -1,4 +1,5 @@
 <marquee>Grab Your Favourite TV </marquee>
+
 <div style="margin-top: 30px;">
     <div class="row" style="border:5px solid rgb(120, 158, 232) ;border-radius:40px ;">
         
@@ -27,8 +28,10 @@
         <div class="card col-md-7" style="display:flex; border:none;margin-top: 30px;">
             <h2 style="font-size:50px ; text-align:center">LED TV </h2>
            <div class="row row-cols-1 row-cols-md-2">
-
-            <app-tvsales [tel]="telItem" *ngFor="let telItem of television "></app-tvsales>
+ 
+            <app-tvsales [tel]="telItem" *ngFor="let telItem of television "> 
+               
+            </app-tvsales>
         </div>
         </div>
         <!--3rd column-->

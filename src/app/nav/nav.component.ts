@@ -1,6 +1,7 @@
 import { Component, OnInit,EventEmitter, Output } from '@angular/core';
 import { UserService } from '../user.service';
 import { CartService } from '../cart.service';
+import { AdminService } from '../admin.service';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -9,8 +10,9 @@ import { CartService } from '../cart.service';
 export class NavComponent implements OnInit {
   public searchTerm:string=''
 
-  constructor(private authService:UserService,private cartSvc:CartService) { }
+  constructor(private authService:UserService,private adminService:AdminService, private cartSvc:CartService) { }
   auth:boolean=false;
+  admin:boolean=false;
   cartCount:number=0;
   
 
@@ -41,6 +43,13 @@ export class NavComponent implements OnInit {
         this.auth = data;
       }
     );
+      //Admin Service
+      this.adminService.adminSubject.subscribe(
+        data => {
+          console.log('admin inside nav component: ' + data);
+          this.admin = data;
+        }
+      );
     this.cartSvc.getCartItems().subscribe(
       (response)=>
       {

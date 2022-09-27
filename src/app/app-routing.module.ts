@@ -14,6 +14,7 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
 import { TvsalesComponent } from './tv/tvsales/tvsales.component';
 import { CartitemsComponent } from './cartitems/cartitems.component';
 import { SearchComponent } from './search/search.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 
@@ -31,7 +32,8 @@ const routes: Routes = [
   {path:'login', component:LoginComponent},
   {path:'productdetails', component:ProductdetailsComponent},
   {path:'cartitem',component:CartitemsComponent},
-  {path:'search', component:SearchComponent}
+  {path:'search', component:SearchComponent},
+  {path:'checkout', component:CheckoutComponent}
 
   
 ];

@@ -8,6 +8,7 @@ import Swal from 'sweetalert2';
   styleUrls: ['./tvsales.component.css']
 })
 export class TvsalesComponent implements OnInit {
+  searchText: string='';
 
   constructor(private cartsvc:CartService) { }
   cart:Cartitem={
@@ -69,7 +70,11 @@ export class TvsalesComponent implements OnInit {
     }
     return content;
   }
-  
+  onSearchTextEntered(searchValue : string){
+    this.searchText=searchValue;
+    // console.log(this.searchText);
+
+  }
 
 
 }

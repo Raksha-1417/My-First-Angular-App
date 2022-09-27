@@ -1,4 +1,5 @@
-<nav class="navbar navbar-dark bg-dark" style="margin-left:110px;width: 1300px;">
+<app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
+<nav class="navbar navbar-dark bg-dark" style="margin-left:110px;width: 1300px; margin-top: 40px;">
     <div class="container-fluid">
       <h1 style="color: rgb(143, 161, 249); font-size: 25px;text-align: center;">PRODUCT DETAILS</h1>
       <div class="d-flex">
@@ -22,6 +23,7 @@
     </thead>
     <tbody>
       <tr class="info" style="background-color:rgb(240, 240, 247);border:3px solid rgb(124, 124, 239) ;" *ngFor="let product of productData">
+        <ng-container  *ngIf="searchText==='' ||product.pname.toLowerCase().includes(searchText)">
         <td>{{product.id}}</td>
         <td>{{product.pname}}</td>
         <td>{{product.pdescription}}</td>
@@ -35,6 +37,7 @@
           </button>&nbsp;
           <button (click)="deleteProducts(product)" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
         </td>
+        </ng-container>
       </tr>
     </tbody>
   </table>
@@ -75,4 +78,5 @@
       </div>
     </div>
   </div>
+  <app-footer></app-footer>
   

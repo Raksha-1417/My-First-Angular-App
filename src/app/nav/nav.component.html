@@ -19,7 +19,7 @@
             </button> &nbsp;&nbsp;&nbsp;
           </li>
           <li class="nav-item">
-            <button routerLink="register" *ngIf="!auth" class="btn btn-outline-info" style="color:rgb(11, 11, 11);font-size:20px;background-color:rgb(174, 184, 246)">Register/Sign in</button>
+            <button routerLink="register" *ngIf="!auth "  class="btn btn-outline-info" style="color:rgb(11, 11, 11);font-size:20px;background-color:rgb(174, 184, 246)">Register/Sign in</button>
           </li>
           <li class="nav-item">
             <a class="btn btn-outline-dark" type="submit" style="border-radius:10px;font-size:20px;background-color:rgb(174, 184, 246)" routerLink="login"
@@ -72,7 +72,7 @@
             <a class="nav-link" routerLink="tv" *ngIf="auth">TV</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="productdetails" *ngIf="auth">Product Details</a>
+            <a class="nav-link" routerLink="productdetails"  *ngIf="admin">Product Details</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="contact" *ngIf="auth">Customer Care</a>

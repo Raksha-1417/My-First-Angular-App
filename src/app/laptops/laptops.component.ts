@@ -1,4 +1,7 @@
-import { Component, OnInit,EventEmitter,Output } from '@angular/core';
+import { Component, OnInit,EventEmitter,Output ,Input} from '@angular/core';
+import { CartService } from '../cart.service';
+import Swal from 'sweetalert2';
+import { Cartitem } from '../cartitem';
 
 import * as laptops from '../data/products.json';
 @Component({
@@ -9,8 +12,46 @@ import * as laptops from '../data/products.json';
 export class LaptopsComponent implements OnInit {
   searchText: string='';
 
-  constructor() { }
+  constructor(private cartsvc:CartService) { }
+  cart:Cartitem={
+    pid:0,
+    pname:'',
+    pdescription:'',
+    price:0,
+    image:'',
+    quantity:1,
+    totalPrice:1
+  }
+  quantity:number=1;
+  addToCart(lap:any){
+    this.cart.pname=lap.pname;
+    this.cart.pdescription=lap.pdescription;
+    this.cart.price=lap.price;
+    this.cart.image=lap.image;
+    this.cart.price=lap.price;
+    this.cart.totalPrice=lap.totalPrice;
+    this.cart.quantity=this.quantity;
+    this.cart.pid=lap.id;
+    this.cartsvc.addToCart(this.cart);
+    console.log(lap.id);
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+    })
+    Toast.fire({
+      icon: 'success',
+      title: 'Item added successfully'
+    })
+    this.cartsvc.getCount();
+
+
+
+  }
   product:any = (laptops as any).default;
+  @Input() lap:any
 
   ngOnInit(): void {
   }

@@ -1,7 +1,9 @@
+
 <div class="row row-cols-1 row-cols-md-2">
 
     <div class="col col-md-10">
         <div class="container" id="buy">
+            <div  *ngIf="searchText==='' ||tel.pname.toLowerCase().includes(searchText)">
 
             <div class="card">
 
@@ -28,6 +30,7 @@
 
 
             </div>
+        </div>
         </div>
     </div>
 </div>

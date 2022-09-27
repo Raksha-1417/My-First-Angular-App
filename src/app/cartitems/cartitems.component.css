@@ -27,8 +27,8 @@ h3{
     outline: none;
     height: 300px;
     width: 350px;
-    margin-top: 80px;
-    margin: 20px 0px;
+    margin-top: 20px;
+    
 }
 
 h4,
@@ -38,7 +38,7 @@ h6 {
 
 .center {
     position: absolute;
-    top: 100%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;

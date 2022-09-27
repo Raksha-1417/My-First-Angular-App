@@ -11,6 +11,7 @@ import Swal from 'sweetalert2';
   styleUrls: ['./productdetails.component.css']
 })
 export class ProductdetailsComponent implements OnInit {
+  searchText: string='';
   formValue!:FormGroup;
   productModelobj:Productmodel=new Productmodel();
   productData!:any;
@@ -98,5 +99,10 @@ export class ProductdetailsComponent implements OnInit {
     })
   }
 
+  
+  onSearchTextEntered(searchValue : string){
+    this.searchText=searchValue;
+    // console.log(this.searchText);
 
+  }
 }
