@@ -146,7 +146,7 @@ login() {
 
         Toast.fire({
           icon: 'success',
-          title: 'Login Successful!!'
+          title: 'Login Successful!!!'
         })
         this.loginForm.reset();
         this.router.navigate([''])
@@ -161,7 +161,7 @@ login() {
         })
         Toast.fire({
           icon: 'error',
-          title: 'User not found!!'
+          title: 'User not found!!!'
         })
         this.userService.validateAuth(false);
         this.adminService.validateAdmin(false);

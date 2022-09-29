@@ -100,8 +100,6 @@
       "mobile": "",
       "id": 6
     },
-
-  
     {
       "username": "rajkumar",
       "useremail": "raj@gmail.com",
@@ -124,16 +122,7 @@
       "id": 14
     }
   ],
-  "cart": [
-    {
-      "pname": "HP 15s",
-      "pdescription": "12th Gen Intel Core i5 16GB RAM/512GB SSD 15.6-inch(39.6 cm) Micro-Edge Anti-Glare FHD Laptop/Win 11/Intel Iris Xe Graphics.",
-      "price": 74177,
-      "image": "/assets/images/laptop2.jpg",
-      "quantity": 1,
-      "id": 1
-    }
-  ],
+  "cart": [],
   "admin": [
     {
       "username": "admin",

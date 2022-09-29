@@ -34,6 +34,7 @@ export class NavComponent implements OnInit {
     this.productentered=product_name; //Laptop
     console.log(product_name)
   }
+  
 
   ngOnInit(): void {
     this.authService.authSubject.subscribe(
