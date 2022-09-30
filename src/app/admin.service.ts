@@ -7,11 +7,12 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class AdminService {
+  
   public adminSubject = new Subject<boolean>();
   validateAdmin(data:boolean) {
     this.adminSubject.next(data);
   }
-  hosturl=environment.adminapi;
+  //hosturl=environment.adminapi;
   value?:boolean;
     getAdminStatus(){
     this.adminSubject.subscribe(

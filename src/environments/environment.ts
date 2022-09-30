@@ -3,11 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  userapi:"  http://localhost:3000/users",
-  cartapi:"http://localhost:3000/cart",
-  postapi:"  http://localhost:3000/posts",
-  adminapi:"http://localhost:3000/admin"
+  production: true,
+  userapi:"https://heroku-json-server-m-store.herokuapp.com/users",
+  cartapi:"https://heroku-json-server-m-store.herokuapp.com/cart",
+  postapi: "https://heroku-json-server-m-store.herokuapp.com/posts",
+  adminapi:"https://heroku-json-server-m-store.herokuapp.com/admin"
 
 
   

@@ -10,7 +10,7 @@ export class UserService {
     this.authSubject.next(data);
 
   }
-  hosturl=environment.userapi;
+ // hosturl=environment.userapi;
   value?:boolean;
   getAuthStatus(){
     this.authSubject.subscribe(
